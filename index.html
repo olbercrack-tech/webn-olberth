@@ -1,23 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
+<<!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <link rel="shortcut icon" href="imagenes wed/Umbrella-Corporation-Logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="imagenes wed/Umbrella-Corporation-Logo.webp" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <title>Guia Resident Evil 4</title>
-       <link rel="stylesheet" href="style.css">
+    <title>Guía Resident Evil 4</title>
+
+    <link rel="preconnect" href="https://www.youtube.com" crossorigin>
+    <link rel="preconnect" href="https://www.google.com" crossorigin>
+    <link rel="preconnect" href="https://i.ytimg.com" crossorigin> <!-- YouTube thumbnails -->
+
     
+    <link rel="preload" href="imagenes wed/Umbrella-Corporation-Logo.webp" as="image">
+    <link rel="preload" href="imagenes wed/menu-2-large.webp" as="image" fetchpriority="high">
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
-    
 <body>
     <main>
         <header class="header">
             <div class="menu container">
                 <a href="#" class="logo">
-                    <img src="imagenes wed/Umbrella-Corporation-Logo.png" alt="Umbrela corporention logo">
+                    <picture>
+                        <source srcset="imagenes wed/Umbrella-Corporation-Logo.avif" type="image/avif">
+                        <source srcset="imagenes wed/Umbrella-Corporation-Logo.webp" type="image/webp">
+                        <img src="imagenes wed/Umbrella-Corporation-Logo.png" 
+                             alt="Umbrella Corporation logo" 
+                             width="150" 
+                             height="50"
+                             loading="eager"
+                             fetchpriority="high">
+                    </picture>
                 </a>
                 <input type="checkbox" id="menu" /> 
                 <label for="menu">
+                    <!-- Icono de menú pendiente – considera usar SVG inline o una imagen pequeña con lazy -->
                     <img src="" alt="menu icon">
                 </label>
                 <nav class="navbar">
@@ -27,38 +45,45 @@
                         <li><a href="#informacion">Más información</a></li>
                     </ul>
                     <div class="Cambio-Tema">
-                        <button id="Tema-claro"> claro</button>
-                        <button id="Tema-oscuro"> oscuro</button>
+                        <button id="Tema-claro">Claro</button>
+                        <button id="Tema-oscuro">Oscuro</button>
                     </div>
                 </nav>
             </div>
         </header>
         
-        
         <section id="inicio" class="header-content container">
             <div class="header-txt">
-                <h1>Guia de Resident Evil 4</h1>
-                 <div class="borde-menu">
-                  <img src="imagenes wed/menu-2.jpeg" alt="el juego">
-                 </div>
+                <h1>Guía de Resident Evil 4</h1>
+                <div class="borde-menu">
+                    <picture>
+                        <source srcset="imagenes wed/menu-2.avif" type="image/avif">
+                        <source srcset="imagenes wed/menu-2.webp" type="image/webp">
+                        <img src="imagenes wed/menu-2.jpeg" 
+                             alt="Resident Evil 4 gameplay" 
+                             srcset="imagenes wed/menu-2-small.avif 400w,
+                                     imagenes wed/menu-2-medium.avif 800w,
+                                     imagenes wed/menu-2-large.avif 1200w"
+                             sizes="(max-width: 600px) 400px, (max-width: 1200px) 800px, 1200px"
+                             width="800" 
+                             height="450"
+                             loading="eager"
+                             fetchpriority="high">
+                    </picture>
+                </div>
                 <h2>
-                    Esta es una guia básica que te enseñará tácticas básicas 
+                    Esta es una guía básica que te enseñará tácticas básicas 
                     para avanzar en la historia en el juego Resident Evil 4.
                 </h2>
                 <div class="buttons">
-                    <a href="#" class="btn1">informacion</a>
-                    <a href="#" class="btn1">comienzo</a>
+                    <a href="#" class="btn1">Información</a>
+                    <a href="#" class="btn1">Comienzo</a>
                 </div>   
             </div>
         </section>
         
-                    
-
-
-          
-       </Header>
-       <section class="popular container">
-        <H2>Cap 1: La llegada al pueblo</H2>
+        <section class="popular container">
+            <h2>Cap 1: La llegada al pueblo</h2>
         <p>
             "1998, nunca lo olvidare, en este año sucedieron los espeluznantes asesinatos en las Montañas Arklay. Al  poco se supo la causa, unos experimentos víricos llevados a cabo <br>por Umbrella. El virus broto en una pequeña ciudad en las montañas llamada Raccon city, algo que devasto a todo el mundo. Para evitar riesgos, se tomo  un plan de    <br>contingencia, esterilizar Raccon City. Mas tarde el gobierno de EEUU decreto la suspensión de las < actividades de Umbrella, seis años han pasado desde ese terrible incidente. <br>
              
@@ -89,11 +114,18 @@
               <br>Al abrirse la puerta, ve hacia el armario y toma el dinero, la carta de la cama, en el cajón frente a la ventana, hay munición y la caja de al lado estará la llave <br>insignia. Al salir del cuarto se presentará una secuencia.
               <br>Regresa al cuarto, habra otra secuencia y sera la primera vez que verás a una extraña mujer vestida de rojo. Sal del cuarto y baja las escaleras, entra a la puerta <br>debajo de ellas y dispara al ganado, ve hacia el comedor y luego a la parte de atrás, en un armario encontrarás una granada, y en una alacena dinero. Ve hacia la <br>cocina y si abres el horno saldrá una gallina o sólo encontrarás un huevo.
         </p>
-             <div class="conteiner-3">
-              <img src="imagenes wed/Resident-Evil.jpg" alt="imagen 1" class="imagen3">
+             <div class="container-3">
+                <picture>
+                    <source srcset="imagenes wed/Resident-Evil-medium.avif" type="image/avif">
+                    <source srcset="imagenes wed/Resident-Evil-medium.webp" type="image/webp">
+                    <img src="imagenes wed/Resident-Evil.jpg" class="imagen3"
+                         alt="Resident Evil 4 escena" 
+                         width="800" 
+                         height="450"
+                         loading="lazy">
+                </picture>
             </div>
-       </section>
-
+        </section>
        <p>
           <br> Al salir ten cuidado pues habrá un hombre con Sierra, usa la escopeta, es lo más efectivo contra el, y si eres rápido mientras este en el piso, acuchillalo, cuando veas <br>que se empieza a levantar alejate y dispara con la escopeta, y repite el proceso hasta que muera. De recompensa te dejará un Rubí. Sigue el camino y arriba del primer <br>árbol, verás un nido, dispara y encontrarás una granada. Elimina a la pareja que te ataca, entra a la cabaña y recoge lo que hay dentro. <br>
           <br>Al salir y seguir por el camino ve despacio, pues te encontrarás con varios ganados, antes de que griten avienta una granada explosiva y eliminaras a la mayoría. Cruza <br>la puerta y regresarás al lugar donde estaba la fogata, elimina a la horda y ve a la puerta verde con la insignia de los iluminados y abrela usando la llave que <br>encontraste en la casa anterior. <br> <br>
@@ -137,9 +169,17 @@
 
           <br> Encontrarás a Ashley, y habrá una secuencia, te enseñarán la manera de manejarla, rompe los barriles y sal de ahí, cada de bajes una escalera deberás cacharla pues no <br>baja sola, al intentar salir, aparecerá el líder de los iluminados Osmund Saddler, después de mantener una conversación, logran escapar por la ventana, rompe los barriles y sal.
        </p>
-           <div class="conteiner-2">
-           <img src="imagenes wed/perro.jpg" alt="perro deida caramabiche" class="imagen2">
-           </div>
+           <div class="container-2">
+            <picture>
+                <source srcset="imagenes wed/perro-medium.avif" type="image/avif">
+                <source srcset="imagenes wed/perro-medium.webp" type="image/webp">
+                <img src="imagenes wed/perro.jpg" class="imagen2"
+                     alt="Perro colmillos Resident Evil 4" 
+                     width="800" 
+                     height="450"
+                     loading="lazy">
+            </picture>
+        </div>
        
        <p>
            <br>Te estará esperando una horda, pero habrá un camión com explosivos, llama la atención de los ganados y cuando veas que se acercan, explota el camión y así sólo quedarán <br>1 o 2 para eliminar. Ahora debes regresar por donde viniste hasta la granja donde encontraste por primera vez los medallones.Regresa por los túneles, recogiendo todos <br>los objetos en el camino, sube las escaleras, y llegarás a la plaza principal, elimina a los ganados, recuerda cuidar a Ashley, pues no pelea y Sólo se agacha cuando <br>empiezas a disparar, ten en cuenta que tu también puedes dañarla, así que ten cuidado cuando dispares o ataques con el cuchillo. Ve por el camino de la derecha, <br>cuidando de no caer en las trampas en el suelo, disparales para que se cierren, ya que Ashley cae en ellas. Cruza la puerta y aquí puedes esconderla en una caja <br>metálica, vete tranquilo pues nadie la encontrará y así estarás más libre para pelear. Elimina a los ganados y dispara a las trampas, una vez que todo es te libre, <br>llamala, ella llegará a donde estés, pero es importante dejarle el camino libre o se dañara. Ahora ve a la puerta de la izquierda, al acercarte te darás cuenta que está <br>cerrada, pero puedes mandar a Ashley, ayudándola a trepar y ella abrirá la puerta desde el otro lado, entra y sigue el camino.A qui viene una parte bastante difícil, ve <br>con el buhomero mejora, vende y compra lo necesario pues será una batalla difícil. Al cruzar el puente verás una cinemática
@@ -147,8 +187,16 @@
            <br>Ya en la cabaña, no te preocupes por Ashley pues se escondera, bloquea las entradas con los armarios para que tengas tiempo, si quieres bloquea dos ventanas y abre una, <br>para que lleguen en diferentes tiempos, aquí lo mejor es empezar con la pistola y cuando se te junten la escopeta, si ves que hay varios con la planta en la cabeza, <br>lanza granadas de luz , los elimina al instante, ten cuidado con Luis porque también lo puedes herir. Después de un tiempo deben subir, quédate en un lugar seguro que <br>no te lleguen por todos lados o será más difícil y podrían matarte, recuerda que también suben por las escaleras, si te da tiempo, trata de tirar las escaleras de las <br>ventanas para retrasar su entrada, una vez acabes con todos, verás otra secuencia, recoge todos los objetos y sal. Recoge los objetos de los alrededores, ve con el buhomero y has lo necesario.
        </p>
             
-        <div class="contenerdor">
-           <img src="imagenes wed/buhoneroi.jpeg" alt="buhonero" class="imagen">
+         <div class="contenedor">
+            <picture>
+                <source srcset="imagenes wed/buhoneroi-small.avif" type="image/avif">
+                <source srcset="imagenes wed/buhoneroi-small.webp" type="image/webp">
+                <img src="imagenes wed/buhoneroi.jpeg"  class="imagen"
+                     alt="El Buhonero / Merchant Resident Evil 4" 
+                     width="400" 
+                     height="300"
+                     loading="lazy">
+            </picture>
         </div>
        <p> 
          <br>En la casa de abajo encontrarás un archivo, munición y una máquina de escribir, sigue el camino hacia arriba, y verás una gran puerta, pero no puedes entrar, sigue las    <br>escaleras y sube al teleférico, aquí ten cuidado pues te atacaran desde los otros carritos y desde las salidas de la montaña, dispara desde lejos antes de que lleguen a <br>ti o te causarán mucho daño y pueden matar a Ashley, al llegar al final desciende, y entra en la cabina de control, en los lockers encontrarás munición y granadas. <br> <br>
@@ -170,36 +218,49 @@
             <h2>Videos de Resident Evil 4</h2>
             <p>Contenido de videos aquí...</p>
             
-            <p> para mas informacion <a href="https://youtu.be/mZI81Yfc-5E" target="_blank">video de todo juego si no sabes leer, con amor OLberth</a></p>
+            <p>Para más información <a href="https://youtu.be/mZI81Yfc-5E" target="_blank">video de todo el juego si no sabes leer, con amor OLberth</a></p>
             <br />
-                <div class="video">
-                 <iframe width="560" height="315" src="https://www.youtube.com/embed/eqOxOZq2gcc?si=N_ynUPyVx6xUmRgT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
+            <div class="video">
+                <iframe width="560" height="315" 
+                        src="https://www.youtube.com/embed/eqOxOZq2gcc?si=N_ynUPyVx6xUmRgT" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen
+                        loading="lazy">
+                </iframe>
+            </div>
             <br />
-            <Br>
-                <h2> Guia para vencer a todos los jefes del Resident evil 4</h2>
-                <div class="video2">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/ZKHaFJyFp_c?si=OkUbJQuLMXam4pdL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </Br>
+            <h2>Guía para vencer a todos los jefes del Resident Evil 4</h2>
+            <div class="video2">
+                <iframe width="560" height="315" 
+                        src="https://www.youtube.com/embed/ZKHaFJyFp_c?si=OkUbJQuLMXam4pdL" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen
+                        loading="lazy">
+                </iframe>
+            </div>
         </section>
 
-            <section id="informacion" style="padding: 100px 0; min-height: 500px;">
+        <section id="informacion" style="padding: 100px 0; min-height: 500px;">
             <h3>Más Información</h3>
-            <div class="informacio adicional">
-            <p>Contenido adicional aquí...</p>
-             </div>
-            <h2> Aqui te dejo mas informacion sobre el juego, para que busque mas informacion <br>
-            los link te enviara a otras paginas que posen mas informacion  </h2> <br> <br>
-             <div class="link">
-             <ul>
-              <a href="https://as.com/meristation/2005/05/02/guias/1115013600_026105.html" target="_blank">https://as.com/meristation/2005/05/02/guias/1115013600_026105.html</a>
-              </ul>
-             </div>
+            <div class="informacion-adicional">
+                <p>Contenido adicional aquí...</p>
+            </div>
+            <h2>Aquí te dejo más información sobre el juego, para que busques más detalles</h2>
+            <br /><br />
+            <div class="link">
+                <ul>
+                    <li><a href="https://as.com/meristation/2005/05/02/guias/1115013600_026105.html" target="_blank">https://as.com/meristation/2005/05/02/guias/1115013600_026105.html</a></li>
+                </ul>
+            </div>
         </section>
     </main>
 
-    <script src="script.js"></script>
-
+    <script defer src="script.js"></script>
 </body>
 </html>
