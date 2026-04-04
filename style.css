@@ -35,13 +35,7 @@ body{
   transition: all 0.5s;
 }
 
- @media(max-width:768px){
-    .logo-umbrella{
-        width: 100;
-        height: auto;
-    }
- }
-   @media(max-width:600px){
+      @media(max-width:600px){
     .menu-imagen{
         max-width: 90%;
         display: block;
@@ -71,7 +65,10 @@ body{
     p{
         font-size:  16px;
         text-align: left;
-        padding: 0 15px;
+        padding:  15px;
+        display: block;
+        width: 95%;
+        margin-bottom: 20px;
     }
 
    }
@@ -119,11 +116,15 @@ body{
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
     max-width: 100%;
     display: block;
-    margin: 0 auto 1.5rem;
-     
-     
+    margin: 0 auto 1.5rem;     
 }
-
+  
+  @media(max-width:600px){
+    .imagen, .imagen2, .imagen3{
+        box-shadow: 0 4px 8px rgb(0,0,0,0,5);
+        border-width: 2px;
+    }
+  }
 h1{
     color: aliceblue;
      font-size: 1.6em;
