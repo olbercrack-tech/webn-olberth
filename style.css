@@ -35,6 +35,18 @@ body{
   transition: all 0.5s;
 }
 
+ @media(max-width:768px){
+    .logo-umbrella{
+        width: 700px;
+        height: auto;
+    }
+ }
+   @media(max-width:768px){
+    .menu-imagen{
+        width: 700px;
+        height: auto;
+    }
+   }
  p {
     display: flex;
     justify-content: center;
@@ -261,7 +273,7 @@ h3{
     }
 
     .Cambio-Tema button {
-        padding: 8px 15px; /* Botones más fáciles de tocar con el dedo */
+        padding: 8px 15px; 
     }
 }
      
