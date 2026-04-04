@@ -37,16 +37,20 @@ body{
 
  @media(max-width:768px){
     .logo-umbrella{
-        width: 700px;
+        width: 100;
         height: auto;
     }
  }
-   @media(max-width:768px){
+   @media(max-width:600px){
     .menu-imagen{
-        width: 700px;
-        height: auto;
+        max-width: 90%;
+        display: block;
+        margin: 0 auto;
+        border-radius: 8px;
     }
    }
+    
+   
  p {
     display: flex;
     justify-content: center;
